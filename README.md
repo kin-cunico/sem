@@ -1,3 +1,5 @@
+![workflow](https://github.com/<kin-cunico>/<sem>/actions/workflows/main.yml/badge.svg)
+
 # READ ME FILE
 
 This is an ongoing university project to study
