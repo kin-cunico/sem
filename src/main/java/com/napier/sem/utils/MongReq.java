@@ -11,7 +11,8 @@ import org.bson.Document;
  */
 public class MongReq {
 
-    private final MongoClient mongoClient = new MongoClient("localhost", 27000);
+    // Earlier this client was initialized locally with "localhost", "27000"
+    private final MongoClient mongoClient = new MongoClient("mongo-dbserver");
     private final MongoDatabase mongoDatabase = mongoClient.getDatabase("mydb");
     private final MongoCollection<Document> collection = mongoDatabase.getCollection("test");
 
