@@ -10,3 +10,7 @@ In conjunction: [-it]
 
 So that I can start it with the terminal and making it accept
 inputs.
+
+### Week 3
+This is where I added the .yml file, which should prove
+useful in building with git workflows
