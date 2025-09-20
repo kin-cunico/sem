@@ -1,8 +1,8 @@
 # READ ME FILE
 
 ![workflow](https://github.com/kin-cunico/sem/actions/workflows/main.yml/badge.svg) \
-[![LICENSE](https://img.shields.io/github/license/kin-cunico/devops.svg?style=flat-square)](https://github.com/kin-cunico/devops/blob/main/LICENSE)
-[![Releases](https://img.shields.io/github/release/kin-cunico/devops/all.svg?style=flat-square)](https://github.com/kin-cunico/devops/releases)
+[![LICENSE](https://img.shields.io/github/license/kin-cunico/sem.svg?style=flat-square)](https://github.com/kin-cunico/sem/blob/main/LICENSE)
+[![Releases](https://img.shields.io/github/release/kin-cunico/sem/all.svg?style=flat-square)](https://github.com/kin-cunico/sem/releases)
 
 This is an ongoing university project to study Software Engineering Methods.
 
