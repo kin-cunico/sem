@@ -8,12 +8,8 @@ public class InputReq {
     private String name;
     private String age;
     public InputReq() {
-        promptName();
-        greetUser();
-        guessAge();
-
     }
-    private void promptName() {
+    public void promptName() {
         System.out.println("Please enter your name: ");
         this.name = input.nextLine();
     }
@@ -23,13 +19,13 @@ public class InputReq {
         this.age = input.nextLine();
     }
 
-    private void greetUser() {
+    public void greetUser() {
         System.out.printf("Hello, %s!",
                 getName()
         );
     }
 
-    private void guessAge() {
+    public void guessAge() {
         Random rand = new Random();
         String guessedAge = Integer.toString(rand.nextInt(1, 99));
 
