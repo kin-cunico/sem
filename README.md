@@ -1,6 +1,7 @@
-![workflow](https://github.com/<kin-cunico>/<sem>/actions/workflows/main.yml/badge.svg)
-
 # READ ME FILE
+
+![workflow](https://github.com/kin-cunico/sem/actions/workflows/main.yml/badge.svg)
+
 
 This is an ongoing university project to study
 Software Engineering Methods.
