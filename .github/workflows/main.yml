@@ -18,6 +18,14 @@ jobs:
       - name: Setup network
         run: |
           docker network create --driver bridge se-methods
+
+      - name: Ensure submodules are fully checked out
+        run: |
+          git submodule sync --recursive
+          git submodule update --init --recursive --force
+          echo "Submodule contents:"
+          ls -R db/
+
       - name: Build with Maven
         run: mvn package
       - name: Run docker compose file
