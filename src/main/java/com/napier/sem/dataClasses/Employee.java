@@ -1,5 +1,11 @@
 package com.napier.sem.dataClasses;
 
+import com.napier.sem.utils.DatabaseReq;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 public class Employee {
         /**
          * Employee number
@@ -35,6 +41,5 @@ public class Employee {
          * Employee's manager
          */
         public String manager;
-
 
 }

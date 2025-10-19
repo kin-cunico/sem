@@ -42,12 +42,12 @@ public class DatabaseReq {
             try
             {
                 // Wait a bit for db to start
-                Thread.sleep(30000);
+                Thread.sleep(3000);
                 // Connect to database
                 con = DriverManager.getConnection("jdbc:mysql://db:3306/employees?allowPublicKeyRetrieval=true&useSSL=false", "root", "example");
                 System.out.println("Successfully connected");
                 // Wait a bit
-                Thread.sleep(10000);
+                Thread.sleep(1000);
                 // Exit for loop
                 break;
             }
@@ -59,24 +59,6 @@ public class DatabaseReq {
             catch (InterruptedException ie)
             {
                 System.out.println("Thread interrupted? Should not happen.");
-            }
-        }
-    }
-
-    /** method: closeConnection()
-     * used to close database connection
-     */
-    public void closeConnection() {
-        if (con != null)
-        {
-            try
-            {
-                // Close connection
-                con.close();
-            }
-            catch (Exception e)
-            {
-                System.out.println("Error closing connection to database");
             }
         }
     }
@@ -127,6 +109,24 @@ public class DatabaseReq {
                             + "Salary:" + emp.salary + "\n"
                             + emp.dept_name + "\n"
                             + "Manager: " + emp.manager + "\n");
+        }
+    }
+
+    /** method: closeConnection()
+     * used to close database connection
+     */
+    public void closeConnection() {
+        if (con != null)
+        {
+            try
+            {
+                // Close connection
+                con.close();
+            }
+            catch (Exception e)
+            {
+                System.out.println("Error closing connection to database");
+            }
         }
     }
 }
