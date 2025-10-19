@@ -1,7 +1,7 @@
 package com.napier.sem;
+import com.napier.sem.dataClasses.Employee;
 import com.napier.sem.utils.DatabaseReq;
 
-import java.sql.*;
 
 
 public class App {
@@ -13,5 +13,9 @@ public class App {
         req.connectDb();
 
         req.closeConnection();
+
+        Employee emp = req.getEmployee(2345);
+
+        req.displayEmployee(emp);
     }
 }
